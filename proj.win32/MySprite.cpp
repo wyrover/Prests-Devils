@@ -68,7 +68,7 @@ void MySprite::ccTouchMoved(CCTouch* touch, CCEvent* event)
 void MySprite::ccTouchEnded(CCTouch* touch, CCEvent* event)
 {
 	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-    CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
+        CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 	float *p = new float[2];
 	ConstantValue *constant = new ConstantValue();
 	HelloWorld *hw = (HelloWorld*)CCDirector::sharedDirector()->getRunningScene()->getChildByTag(0);
